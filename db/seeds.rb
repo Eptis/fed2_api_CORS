@@ -52,3 +52,28 @@
 # Review.create( movie_id: 5, score: 8.5 )
 # Review.create( movie_id: 5, score: 9.2 )
 # Review.create( movie_id: 5, score: 9.3 )
+
+movie = Movie.find_by_id(1)
+movie.cover = "http://ia.media-imdb.com/images/M/MV5BNTQ3OTkwNTgyN15BMl5BanBnXkFtZTcwNTAzOTAzOQ@@._V1_SX214_.jpg"
+movie.save
+
+
+movie = Movie.find_by_id(2)
+movie.cover = "http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX214_.jpg"
+movie.save
+
+movie = Movie.find_by_id(3)
+movie.cover = "http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX214_.jpg"
+movie.save
+
+movie = Movie.find_by_id(4)
+movie.cover = "http://ia.media-imdb.com/images/M/MV5BMjE0ODk2NjczOV5BMl5BanBnXkFtZTYwNDQ0NDg4._V1_SY317_CR4,0,214,317_.jpg"
+movie.save
+
+movie = Movie.find_by_id(5)
+movie.cover = "http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY317_CR0,0,214,317_.jpg"
+movie.save
+
+movie = Movie.find_by_id(6)
+movie.cover = "http://ia.media-imdb.com/images/M/MV5BMjIwNTYzMzE1M15BMl5BanBnXkFtZTcwOTE5Mzg3OA@@._V1_SX214_.jpg"
+movie.save
