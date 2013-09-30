@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
   def show
     @movie = Movie.find(params[:id])
 
-    render json: @movie, except: [:created_at, :updated_at]
+    render json: @movie, except: [:created_at, :updated_at], :include => :reviews
   end
 
   # POST /movies
